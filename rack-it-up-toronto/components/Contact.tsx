@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
                   <label htmlFor="name" className="block text-sm font-medium text-stone-700 mb-2">Name</label>
                   <input 
                     type="text" 
-                    id="name" name="name" className=... 
+                    id="name" name="name"
                     className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-brand-green focus:border-transparent outline-none transition-shadow"
                     placeholder="John Doe"
                   />
@@ -81,7 +81,7 @@ const Contact: React.FC = () => {
                 <label htmlFor="email" className="block text-sm font-medium text-stone-700 mb-2">Email</label>
                 <input 
                   type="email" 
-                  id="email" name="email" className=... 
+                  id="email" name="email"
                   className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-brand-green focus:border-transparent outline-none transition-shadow"
                   placeholder="john@company.com"
                 />
@@ -89,7 +89,7 @@ const Contact: React.FC = () => {
               <div>
                 <label htmlFor="service" className="block text-sm font-medium text-stone-700 mb-2">Service Required</label>
                 <select 
-                  id="service" name="service" className=...
+                  id="service" name="service"
                   className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-brand-green focus:border-transparent outline-none transition-shadow bg-white"
                 >
                   <option>New Installation</option>
@@ -102,7 +102,7 @@ const Contact: React.FC = () => {
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-stone-700 mb-2">Message</label>
                 <textarea 
-                  id="message" name="message" rows={4} className=...
+                  iid="message" name="message"
                   rows={4}
                   className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-brand-green focus:border-transparent outline-none transition-shadow"
                   placeholder="Tell us about your project..."
