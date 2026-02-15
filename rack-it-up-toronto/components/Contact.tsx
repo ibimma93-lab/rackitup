@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
 
           <div className="bg-stone-50 p-8 md:p-10 rounded-3xl border border-stone-100 shadow-lg">
             <h3 className="text-2xl font-bold text-stone-900 mb-6">Send Us a Message</h3>
-            <form name="contact" method="POST" data-netlify="true" className="space-y-6">
+            <form name="contact" method="POST" data-netlify="true" action="/" className="space-y-6">
   <input type="hidden" name="form-name" value="contact" />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
