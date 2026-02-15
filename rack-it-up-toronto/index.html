@@ -48,6 +48,23 @@
 </head>
   <body class="bg-stone-50 text-stone-900 font-sans antialiased">
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
+ 
+    <!-- Netlify Forms detection: hidden static form -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="tel" name="phone" />
+    <input type="email" name="email" />
+    <select name="service">
+      <option>New Installation</option>
+      <option>Repairs</option>
+      <option>Maintenance</option>
+      <option>Inspection</option>
+      <option>Other</option>
+    </select>
+    <textarea name="message"></textarea>
+    <input name="bot-field" />
+  </form>
+
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
