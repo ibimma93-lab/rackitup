@@ -71,7 +71,7 @@ const Contact: React.FC = () => {
                   <label htmlFor="phone" className="block text-sm font-medium text-stone-700 mb-2">Phone</label>
                   <input 
                     type="tel" 
-                    id="phone" 
+                    id="phone" name="phone" 
                     className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-brand-green focus:border-transparent outline-none transition-shadow"
                     placeholder="647-123-4567"
                   />
@@ -102,7 +102,7 @@ const Contact: React.FC = () => {
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-stone-700 mb-2">Message</label>
                 <textarea 
-                  iid="message" name="message"
+                  id="message" name="message"
                   rows={4}
                   className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-brand-green focus:border-transparent outline-none transition-shadow"
                   placeholder="Tell us about your project..."
