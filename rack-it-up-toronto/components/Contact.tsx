@@ -55,13 +55,14 @@ const Contact: React.FC = () => {
 
           <div className="bg-stone-50 p-8 md:p-10 rounded-3xl border border-stone-100 shadow-lg">
             <h3 className="text-2xl font-bold text-stone-900 mb-6">Send Us a Message</h3>
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+            <form name="contact" method="POST" data-netlify="true" className="space-y-6">
+  <input type="hidden" name="form-name" value="contact" />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-stone-700 mb-2">Name</label>
                   <input 
                     type="text" 
-                    id="name" 
+                    id="name" name="name" className=... 
                     className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-brand-green focus:border-transparent outline-none transition-shadow"
                     placeholder="John Doe"
                   />
@@ -80,7 +81,7 @@ const Contact: React.FC = () => {
                 <label htmlFor="email" className="block text-sm font-medium text-stone-700 mb-2">Email</label>
                 <input 
                   type="email" 
-                  id="email" 
+                  id="email" name="email" className=... 
                   className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-brand-green focus:border-transparent outline-none transition-shadow"
                   placeholder="john@company.com"
                 />
@@ -88,7 +89,7 @@ const Contact: React.FC = () => {
               <div>
                 <label htmlFor="service" className="block text-sm font-medium text-stone-700 mb-2">Service Required</label>
                 <select 
-                  id="service"
+                  id="service" name="service" className=...
                   className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-brand-green focus:border-transparent outline-none transition-shadow bg-white"
                 >
                   <option>New Installation</option>
@@ -101,7 +102,7 @@ const Contact: React.FC = () => {
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-stone-700 mb-2">Message</label>
                 <textarea 
-                  id="message" 
+                  id="message" name="message" rows={4} className=...
                   rows={4}
                   className="w-full px-4 py-3 rounded-xl border border-stone-200 focus:ring-2 focus:ring-brand-green focus:border-transparent outline-none transition-shadow"
                   placeholder="Tell us about your project..."
